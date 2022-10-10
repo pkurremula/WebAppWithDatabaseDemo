@@ -19,6 +19,13 @@ steps:
     command: 'restore'
     feedsToUse: 'select'
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo  '$(System.DefaultWorkingDirectory)'
+      dir
+      dir subfoldername
+
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
