@@ -28,7 +28,8 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: '/home/vsts/work/1/s/sonar-add-project-guid.ps1'
+    filePath: 'sonar-add-project-guid.ps1'
+    workingDirectory: '/home/vsts/work/1/s'
 
 - task: SonarCloudPrepare@1
   inputs:
