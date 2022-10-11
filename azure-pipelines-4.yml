@@ -21,6 +21,7 @@ steps:
     projects: |
       **/*.csproj
       !**/*SeleniumUiTests.csproj
+      !**/*WebApp.UnitTest.csproj
 
 - task: CmdLine@2
   inputs:
