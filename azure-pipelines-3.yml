@@ -38,6 +38,10 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'Dotnet-Core-MVC-Appkp'
 
+- task: WhiteSource@21
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+
 #- task: DotNetCoreCLI@2
 #  inputs:
 #    command: 'build'
