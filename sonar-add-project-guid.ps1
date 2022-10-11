@@ -15,5 +15,6 @@ foreach($pathobject in $paths)
     $child.InnerText = [guid]::NewGuid().ToString().ToUpper()
     $node = $doc.SelectSingleNode("//Project/PropertyGroup")
     $node.AppendChild($child)
+    Write-Output $child.InnerText
     $doc.Save($path)
 }
