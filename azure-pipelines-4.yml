@@ -18,6 +18,9 @@ steps:
   inputs:
     command: 'restore'
     feedsToUse: 'select'
+    projects: |
+      **/*.csproj
+      !**/*SeleniumUiTests.csproj
 
 - task: CmdLine@2
   inputs:
